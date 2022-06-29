@@ -16,23 +16,23 @@ public class MovimentoPlayer : MonoBehaviour
     [SerializeField]
     private float velocidade;
 
-    private IInput GerenciadorDeInput;
+    [SerializeField]
+    private GerenciadorDeInput OGerenciadorDeInput;
 
     private Rigidbody Rb;
     // Start is called before the first frame update
     void Start()
     {
-        GerenciadorDeInput = IInputObjeto.GetComponent<IInput>();
        Rb=GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Rb.velocity = new Vector3(GerenciadorDeInput.GetDirecao().x*velocidade,Rb.velocity.y,GerenciadorDeInput.GetDirecao().y*velocidade);
-        if (GerenciadorDeInput.GetDirecao().magnitude>0)
+        Rb.velocity = new Vector3(OGerenciadorDeInput.GetDirecao().x*velocidade,Rb.velocity.y,OGerenciadorDeInput.GetDirecao().y*velocidade);
+        if (OGerenciadorDeInput.GetDirecao().magnitude>0)
         {
-            transform.eulerAngles = new Vector3(0, Mathf.Atan2(GerenciadorDeInput.GetDirecao().x, GerenciadorDeInput.GetDirecao().y) * Mathf.Rad2Deg, 0);
+            transform.eulerAngles = new Vector3(0, Mathf.Atan2(OGerenciadorDeInput.GetDirecao().x, OGerenciadorDeInput.GetDirecao().y) * Mathf.Rad2Deg, 0);
         }
         Cam.transform.position = transform.position + OffsetCamera;
 

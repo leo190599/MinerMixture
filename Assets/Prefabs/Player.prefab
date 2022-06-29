@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 6551995217396018644}
   - component: {fileID: 6628169336044584006}
   - component: {fileID: 8226047713180861779}
+  - component: {fileID: 756578587}
+  - component: {fileID: 756578588}
+  - component: {fileID: 756578592}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,6 +68,95 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &756578587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2394376606000438070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877f4bb6bcedf9148b00f52d4dacebb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PontoMorto: 0.1
+  EventosButtonDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: JoysticVirtual, Assembly-CSharp
+        m_MethodName: SetarPosicaoJoystic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: JoysticVirtual, Assembly-CSharp
+        m_MethodName: TornarJoysticVisivel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  EventosButtonUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: JoysticVirtual, Assembly-CSharp
+        m_MethodName: TornarJoysticInvisivel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &756578588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2394376606000438070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc424ae01b7d8241bc00853deda9d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IInputObjeto: {fileID: 2394376606000438070}
+  Cam: {fileID: 0}
+  OffsetCamera: {x: 0, y: 5, z: -8}
+  velocidade: 10
+  OGerenciadorDeInput: {fileID: 0}
+--- !u!114 &756578592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2394376606000438070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da393328a9961743b36b9178cf072b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ouro: 100
+  IncrementadorDoOuro: 10
+  TempoParaIncrementarOOuro: 1
+  TextosOuro:
+  - {fileID: 0}
 --- !u!1 &5591109375318210914
 GameObject:
   m_ObjectHideFlags: 0

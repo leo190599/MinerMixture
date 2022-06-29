@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GerenciadorDeInput : MonoBehaviour,IInput
+public class GerenciadorDeInput : MonoBehaviour
 {
     [SerializeField]
     private float PontoMorto = 100;

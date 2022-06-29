@@ -12,25 +12,11 @@ public class GerenciadorDeRecursos : MonoBehaviour
     [SerializeField]
     private float TempoParaIncrementarOOuro = 1;
     [SerializeField]
-    private GameObject[] TextosOuro;
-    private List<ITextoTela> ITextosOuro;
-    // Start is called before the first frame update
+    private TextoTela[] TextosOuro;
+   
     void Start()
     {
-        ITextosOuro = new List<ITextoTela>();
         StartCoroutine("corroTinaOuro");
-        foreach(GameObject g in TextosOuro)
-        {
-            ITextoTela temp = g.GetComponent<ITextoTela>();
-            if(temp!=null)
-            {
-                ITextosOuro.Add(temp);
-            }
-            else
-            {
-                Debug.LogError("Todos os objetos devem conter um componente que possua a interface ITextoTela, o objeto "+g+" não possui");
-            }
-        }
     }
 
     public void setOuro(int NovaQuantidadeDeOuro)
@@ -55,7 +41,7 @@ public class GerenciadorDeRecursos : MonoBehaviour
     {
         yield return new WaitForSeconds(TempoParaIncrementarOOuro);
         Ouro += (int)IncrementadorDoOuro;
-        foreach(ITextoTela t in ITextosOuro)
+        foreach(TextoTela t in TextosOuro)
         {
             t.atualizarValor(Ouro);
        }

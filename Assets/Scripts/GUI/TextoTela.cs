@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TextoTela : MonoBehaviour,ITextoTela
+public class TextoTela : MonoBehaviour
 {
     private TextMeshProUGUI Texto;
     // Start is called before the first frame update
