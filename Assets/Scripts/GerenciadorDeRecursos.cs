@@ -13,11 +13,11 @@ public class GerenciadorDeRecursos : MonoBehaviour
         [SerializeField]
         private float quantidadeInicial;
         [SerializeField]
-        private UnityEvent eventosRecurso;
+        private float IncrementoInicial;
 
         public Recurso getRecurso => recurso;
         public float getQuantidadeInicial => quantidadeInicial;
-        public UnityEvent getEventosRecurso => eventosRecurso;
+        public float getIncrementoInicial => IncrementoInicial;
     }
 
     [SerializeField]
@@ -29,6 +29,7 @@ public class GerenciadorDeRecursos : MonoBehaviour
         for(int i=0;i<recursosInspetor.Length;i++)
         {
             recursosInspetor[i].getRecurso.setQuantidade(this, recursosInspetor[i].getQuantidadeInicial) ;
+            recursosInspetor[i].getRecurso.setIncremento(this, recursosInspetor[i].getIncrementoInicial);
             if (recursosInspetor[i].getRecurso.getIncrementarComOTempo)
             {
                 StartCoroutine("corrotinaRecursos", i);
@@ -39,7 +40,6 @@ public class GerenciadorDeRecursos : MonoBehaviour
     {
         yield return new WaitForSeconds(recursosInspetor[index].getRecurso.getTempoDeIncremento);
         recursosInspetor[index].getRecurso.incrementar(this);
-        recursosInspetor[index].getEventosRecurso.Invoke();
         StartCoroutine("corrotinaRecursos", index);
     }
  

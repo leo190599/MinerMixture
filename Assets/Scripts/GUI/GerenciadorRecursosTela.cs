@@ -13,10 +13,18 @@ public class GerenciadorRecursosTela : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI TextoRecurso;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         ImagemRecurso.sprite = recursoASerVisto.getImagem;
-        atualizarTexto();
+    }
+
+    private void OnEnable()
+    {
+        recursoASerVisto.eventosASeremChamados += atualizarTexto;
+    }
+    private void OnDisable()
+    {
+        recursoASerVisto.eventosASeremChamados -= atualizarTexto;
     }
 
     public void atualizarTexto()

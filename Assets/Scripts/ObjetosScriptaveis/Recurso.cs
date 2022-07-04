@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu(fileName = "NovoRecurso", menuName = "Recuro")]
 public class Recurso : ScriptableObject
@@ -20,6 +21,19 @@ public class Recurso : ScriptableObject
     [SerializeField]
     private bool incrementarComOtempo;
 
+    public UnityAction eventosASeremChamados;
+    private void Awake()
+    {
+        if (eventosASeremChamados != null)
+        {
+            eventosASeremChamados.Invoke();
+        }
+    }
+
+    public void setIncremento(Object chamador,float quantidade)
+    {
+        incremento = quantidade;
+    }
 
     public void incrementarIncremento(Object chamador,float quantidade)
     {
@@ -30,20 +44,33 @@ public class Recurso : ScriptableObject
         if (quantidade >= preco)
         {
             quantidade -= preco;
+            if (eventosASeremChamados != null)
+            {
+                eventosASeremChamados.Invoke();
+            }
         }
     }
     public void setQuantidade(Object chamador,float quantidade)
     {
         this.quantidade = quantidade;
+        if (eventosASeremChamados!=null)
+        {
+            eventosASeremChamados.Invoke();
+        }
     }
     public void incrementar(Object chamador)
     {
         quantidade += incremento;
+        if (eventosASeremChamados != null)
+        {
+            eventosASeremChamados.Invoke();
+        }
     }
     public void setTempoDeIncremento(Object chamador, float tempo)
     {
         this.tempoDeIncremento = tempo;
     }
+
     public float getQuantidade => quantidade;
     public string getNome => nome;
     public float getIncremento => incremento;
