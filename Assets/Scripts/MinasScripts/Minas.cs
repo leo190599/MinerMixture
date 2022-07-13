@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Minas : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class Minas : MonoBehaviour
         public Recurso getRecurso => recurso;
         public float getQuantidade => quantidade;
     }
+
+    [SerializeField]
+    private UnityEvent eventoAtivar;
     private bool ativo = false;
     [SerializeField]
     private Material MaterialDesativado, MaterialAtivado;
@@ -45,6 +49,7 @@ public class Minas : MonoBehaviour
     {
         renderizador.material = MaterialAtivado;
         ativo = true;
+        eventoAtivar.Invoke();
     }
 
     public void Desativar()

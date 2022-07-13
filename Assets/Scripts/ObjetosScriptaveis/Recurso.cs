@@ -22,6 +22,7 @@ public class Recurso : ScriptableObject
     private bool incrementarComOtempo;
 
     public UnityAction eventosASeremChamados;
+    public UnityAction eventosIncremento;
     private void Awake()
     {
         if (eventosASeremChamados != null)
@@ -33,11 +34,19 @@ public class Recurso : ScriptableObject
     public void setIncremento(Object chamador,float quantidade)
     {
         incremento = quantidade;
+        if (eventosIncremento != null)
+        {
+            eventosIncremento.Invoke();
+        }
     }
 
     public void incrementarIncremento(Object chamador,float quantidade)
     {
         incremento += quantidade;
+        if (eventosIncremento != null)
+        {
+            eventosIncremento.Invoke();
+        }
     }
     public void comprar(Object chamador,float preco)
     {
@@ -69,6 +78,10 @@ public class Recurso : ScriptableObject
     public void setTempoDeIncremento(Object chamador, float tempo)
     {
         this.tempoDeIncremento = tempo;
+        if (eventosIncremento != null)
+        {
+            eventosIncremento.Invoke();
+        }
     }
 
     public float getQuantidade => quantidade;
