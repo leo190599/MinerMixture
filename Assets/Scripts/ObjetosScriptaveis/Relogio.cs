@@ -14,26 +14,36 @@ public class Relogio : ScriptableObject
     public void setTempo(Object chamador,float novoTempo)
     {
         tempo = novoTempo;
-        eventosPassarTempo.Invoke();
+        if (eventosPassarTempo != null)
+        {
+            eventosPassarTempo.Invoke();
+        }
     }
 
     public void adicionarTempo(Object chamador,float quantidadeDeTempo)
     {
         tempo += tempo;
-        eventosPassarTempo.Invoke();
+        if (eventosPassarTempo!=null)
+        {
+            eventosPassarTempo.Invoke();
+        }
     }
 
     public void passarTempo(Object chamador, float tempoDecorrido)
     {
         tempo -= tempoDecorrido;
         tempo=Mathf.Clamp(tempo,0,Mathf.Infinity);
-        eventosPassarTempo.Invoke();
-        if(tempo==0)
+        if (eventosPassarTempo != null)
+        {
+            eventosPassarTempo.Invoke();
+        }
+        if(tempo==0 && eventosTerminaTempo!=null)
         {
             eventosTerminaTempo.Invoke();
         }
     }
 
 
-    public float getTempo => tempo;
+    public float getTempoSegundos => tempo%60;
+    public float getTempoMinutos => Mathf.Floor(tempo / 60);
 }

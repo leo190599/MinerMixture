@@ -59,6 +59,27 @@ public class Recurso : ScriptableObject
             }
         }
     }
+
+    public void cobrar(Object chamador, float custo)
+    {
+        if (quantidade >= custo)
+        {
+            quantidade -= custo;
+            if (eventosASeremChamados != null)
+            {
+                eventosASeremChamados.Invoke();
+            }
+        }
+        else
+        {
+            quantidade =0;
+            if (eventosASeremChamados != null)
+            {
+                eventosASeremChamados.Invoke();
+            }
+            Debug.Log("Game over");
+        }
+    }
     public void setQuantidade(Object chamador,float quantidade)
     {
         this.quantidade = quantidade;
