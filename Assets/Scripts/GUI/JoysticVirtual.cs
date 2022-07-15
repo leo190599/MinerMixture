@@ -9,6 +9,8 @@ public class JoysticVirtual : MonoBehaviour
     private RectTransform Joystic;
     [SerializeField]
     private RawImage ImagemJoystic;
+    [SerializeField]
+    private GerenciadorEstadoDeJogo gerenciadorDeEstado;
     
     // Start is called before the first frame update
     public void SetarPosicaoJoystic()
@@ -19,6 +21,7 @@ public class JoysticVirtual : MonoBehaviour
 
     public void TornarJoysticVisivel()
     {
+        if(gerenciadorDeEstado.getEstado== GerenciadorEstadoDeJogo.jogando)
         ImagemJoystic.enabled = true;
     }
 

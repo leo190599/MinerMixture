@@ -5,6 +5,8 @@ using UnityEngine;
 public class MovimentoPlayer : MonoBehaviour
 {
     [SerializeField]
+    private GerenciadorEstadoDeJogo gerenciadorEstado;
+    [SerializeField]
     private GameObject IInputObjeto;
  
     [SerializeField]
@@ -30,7 +32,7 @@ public class MovimentoPlayer : MonoBehaviour
     void Update()
     {
         Rb.velocity = new Vector3(OGerenciadorDeInput.GetDirecao().x*velocidade,Rb.velocity.y,OGerenciadorDeInput.GetDirecao().y*velocidade);
-        if (OGerenciadorDeInput.GetDirecao().magnitude>0)
+        if (OGerenciadorDeInput.GetDirecao().magnitude>0 && gerenciadorEstado.getEstado==GerenciadorEstadoDeJogo.jogando)
         {
             transform.eulerAngles = new Vector3(0, Mathf.Atan2(OGerenciadorDeInput.GetDirecao().x, OGerenciadorDeInput.GetDirecao().y) * Mathf.Rad2Deg, 0);
         }

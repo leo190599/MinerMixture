@@ -31,6 +31,18 @@ public class Recurso : ScriptableObject
         }
     }
 
+    public void somarQuantidade(object chamador,float quantidadeASerSomada)
+    {
+        if(quantidade+ quantidadeASerSomada >= 0)
+        {
+            quantidade += quantidadeASerSomada;
+            if (eventosASeremChamados != null)
+            {
+                eventosASeremChamados.Invoke();
+            }
+        }
+    }
+
     public void setIncremento(Object chamador,float quantidade)
     {
         incremento = quantidade;

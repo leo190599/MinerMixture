@@ -22,13 +22,19 @@ public class GerenciadorDeInput : MonoBehaviour
         {
             pressionado = true;
             MouseInicial = Input.mousePosition;
-            EventosButtonDown.Invoke();        
+            if (EventosButtonDown != null)
+            {
+                EventosButtonDown.Invoke();
+            }
         }
         else if (Input.GetMouseButtonUp(0))
         {
             pressionado = false;
             Direcao = new Vector2(0, 0);
-            EventosButtonUp.Invoke();
+            if (EventosButtonUp != null)
+            {
+                EventosButtonUp.Invoke();
+            }
         }
         else
         {
