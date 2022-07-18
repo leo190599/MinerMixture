@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 756578588}
   - component: {fileID: 756578593}
   - component: {fileID: 756578592}
+  - component: {fileID: 93392661}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -136,6 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc424ae01b7d8241bc00853deda9d1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gerenciadorEstado: {fileID: 11400000, guid: bcd2377e62b278041944ea674160eb54, type: 2}
   IInputObjeto: {fileID: 2394376606000438070}
   Cam: {fileID: 0}
   OffsetCamera: {x: 0, y: 5, z: -8}
@@ -157,7 +159,7 @@ MonoBehaviour:
   intervalosEmSegundos: 10
   rASeremCobrados:
   - r: {fileID: 11400000, guid: f06d7a23045af7f40a5df944339fc694, type: 2}
-    quantidade: 150
+    quantidade: 30
 --- !u!114 &756578592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +179,19 @@ MonoBehaviour:
   - recurso: {fileID: 11400000, guid: f06d7a23045af7f40a5df944339fc694, type: 2}
     quantidadeInicial: 100
     IncrementoInicial: 10
+--- !u!114 &93392661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2394376606000438070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0769099e1ebb4d478fe6bf13f70b706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gerenciador: {fileID: 11400000, guid: bcd2377e62b278041944ea674160eb54, type: 2}
 --- !u!1 &5591109375318210914
 GameObject:
   m_ObjectHideFlags: 0

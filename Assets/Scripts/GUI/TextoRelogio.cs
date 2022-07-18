@@ -12,6 +12,7 @@ public class TextoRelogio : MonoBehaviour
     void Start()
     {
         texto = GetComponent<TextMeshProUGUI>();
+        atualizarTexto();
         r.eventosPassarTempo += atualizarTexto;
     }
     
