@@ -837,6 +837,38 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 93392661}
+    - target: {fileID: 1080631577, guid: a878bd574190f9e4aacdc098126cd575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080631577, guid: a878bd574190f9e4aacdc098126cd575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080631577, guid: a878bd574190f9e4aacdc098126cd575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: bd8559884dc5b15438404691a9a85210, type: 2}
+    - target: {fileID: 1080631577, guid: a878bd574190f9e4aacdc098126cd575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080631577, guid: a878bd574190f9e4aacdc098126cd575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: trocarCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080631577, guid: a878bd574190f9e4aacdc098126cd575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: trocadorDeCenas, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080631577, guid: a878bd574190f9e4aacdc098126cd575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: MenuInicial
+      objectReference: {fileID: 0}
+    - target: {fileID: 1080631577, guid: a878bd574190f9e4aacdc098126cd575, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1429646686, guid: a878bd574190f9e4aacdc098126cd575, type: 3}
       propertyPath: m_IsActive
       value: 0
