@@ -597,7 +597,7 @@ MonoBehaviour:
   - recurso: {fileID: 11400000, guid: f06d7a23045af7f40a5df944339fc694, type: 2}
     custo: 100
   outputMina:
-    recurso: {fileID: 11400000, guid: 491e69473c97f10499829f40e7374906, type: 2}
+    recurso: {fileID: 11400000, guid: 80a69ff058371c14aafef2f4f9b59869, type: 2}
     quantidade: 10
 --- !u!4 &9052403591556809912 stripped
 Transform:

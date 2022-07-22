@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: Diamante
   imagem: {fileID: 21300000, guid: 94a1cd751ae47ed40a2ba84c845d9ad9, type: 3}
-  quantidade: 246
+  quantidade: 0
   valorEmOuro: 10
-  incremento: 61
+  incremento: 1
   tempoDeIncremento: 6
-  incrementarComOtempo: 1
+  incrementarComOtempo: 0

@@ -37,6 +37,13 @@ public class GerenciadorRecursosTela : MonoBehaviour
     }
     public void atualizarIncremento()
     {
-        textoIncremento.text = (recursoASerVisto.getIncremento/recursoASerVisto.getTempoDeIncremento).ToString("0.00")+" /seg";
+        if (recursoASerVisto.getIncrementarComOTempo)
+        {
+            textoIncremento.text = (recursoASerVisto.getIncremento / recursoASerVisto.getTempoDeIncremento).ToString("0.00") + " /seg";
+        }
+        else
+        {
+            textoIncremento.text = ("0,00/seg");
+        }
     }
 }
