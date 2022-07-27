@@ -8,10 +8,6 @@ public class GerenciadorDeCena : MonoBehaviour
     private GerenciadorEstadoDeJogo gerenciador;
     void Start()
     {
-        gerenciador.despausar(this);
-    }
-    public void trocarEstado()
-    {
-        gerenciador.trocarEstado(this);
+        gerenciador.trocarEstado(GerenciadorEstadoDeJogo.jogando);
     }
 }

@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: ouro
   imagem: {fileID: 21300000, guid: 6fcd0c286e7d91d49a99a8c4322a300d, type: 3}
-  quantidade: 220
+  quantidade: 0
   valorEmOuro: 1
   incremento: 10
   tempoDeIncremento: 1
   incrementarComOtempo: 1
+  gerenciadorDeEDeJogo: {fileID: 11400000, guid: bcd2377e62b278041944ea674160eb54, type: 2}

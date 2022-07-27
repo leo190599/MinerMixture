@@ -20,6 +20,8 @@ public class Recurso : ScriptableObject
     private float tempoDeIncremento = 1;
     [SerializeField]
     private bool incrementarComOtempo;
+    [SerializeField]
+    private GerenciadorEstadoDeJogo gerenciadorDeEDeJogo;
 
     public UnityAction eventosASeremChamados;
     public UnityAction eventosIncremento;
@@ -89,6 +91,7 @@ public class Recurso : ScriptableObject
             {
                 eventosASeremChamados.Invoke();
             }
+            gerenciadorDeEDeJogo.trocarEstado(GerenciadorEstadoDeJogo.gameOver);
             Debug.Log("Game over");
         }
     }

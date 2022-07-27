@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 756578588}
   - component: {fileID: 756578593}
   - component: {fileID: 756578592}
-  - component: {fileID: 93392661}
+  - component: {fileID: 298484301}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -159,7 +159,7 @@ MonoBehaviour:
   intervalosEmSegundos: 10
   rASeremCobrados:
   - r: {fileID: 11400000, guid: f06d7a23045af7f40a5df944339fc694, type: 2}
-    quantidade: 30
+    quantidade: 300
 --- !u!114 &756578592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,12 +174,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recursosInspetor:
   - recurso: {fileID: 11400000, guid: 491e69473c97f10499829f40e7374906, type: 2}
-    quantidadeInicial: 5
+    quantidadeInicial: 0
     IncrementoInicial: 1
   - recurso: {fileID: 11400000, guid: f06d7a23045af7f40a5df944339fc694, type: 2}
     quantidadeInicial: 100
     IncrementoInicial: 10
---- !u!114 &93392661
+  - recurso: {fileID: 11400000, guid: 80a69ff058371c14aafef2f4f9b59869, type: 2}
+    quantidadeInicial: 100
+    IncrementoInicial: 5
+--- !u!114 &298484301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

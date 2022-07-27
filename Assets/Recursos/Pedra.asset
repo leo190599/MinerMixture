@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: Pedra
   imagem: {fileID: 21300000, guid: d084f9ab58bc7ff49884cdf25c5e3a85, type: 3}
-  quantidade: 110
+  quantidade: 115
   valorEmOuro: 1
   incremento: 5
   tempoDeIncremento: 3
   incrementarComOtempo: 1
+  gerenciadorDeEDeJogo: {fileID: 11400000, guid: bcd2377e62b278041944ea674160eb54, type: 2}

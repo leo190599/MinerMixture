@@ -8,48 +8,64 @@ public class GerenciadorEstadoDeJogo : ScriptableObject
 {
     public const int jogando = 0;
     public const int pausado = 1;
+    public const int gameOver = 2;
+    public const int venceu = 3;
     [SerializeField]
     private int estado=jogando;
 
     public UnityAction eventosPausar;
     public UnityAction eventosDespausar;
+    public UnityAction eventosGameOver;
+    public UnityAction eventosVenceu;
 
 
     private void Awake()
     {
-        despausar(this);
+        trocarEstado(jogando);
     }
 
-    public void pausar(Object chamador)
+    public void trocarEstado(int novoEstado)
     {
-        Time.timeScale = 0;
-
-        estado = pausado;
-        if(eventosPausar!=null)
+        if(novoEstado==jogando)
         {
-            eventosPausar.Invoke();
+            estado = jogando;
+            Time.timeScale = 1;
+            if (eventosDespausar != null)
+            {
+                eventosDespausar.Invoke();
+            }
         }
-    }
-
-    public void despausar(Object chamador)
-    {
-        Time.timeScale = 1;
-        estado = jogando;
-        if(eventosDespausar!=null)
+        else if(novoEstado== pausado)
         {
-            eventosDespausar.Invoke();
+            Time.timeScale = 0;
+
+            estado = pausado;
+            if (eventosPausar != null)
+            {
+                eventosPausar.Invoke();
+            }
         }
-    }
-
-    public void trocarEstado(Object chamador)
-    {
-        if(estado==jogando)
+        else if(novoEstado==gameOver)
         {
-            pausar(this);
+            estado = gameOver;
+            Time.timeScale = 0;
+            if (eventosGameOver != null)
+            {
+                eventosGameOver.Invoke();
+            }
+        }
+        else if(novoEstado==venceu)
+        {
+            estado = venceu;
+            Time.timeScale = 0;
+            if(eventosVenceu!=null)
+            {
+                eventosVenceu.Invoke();
+            }
         }
         else
         {
-            despausar(this);
+            Debug.LogError("Estado nao existe");
         }
     }
 
