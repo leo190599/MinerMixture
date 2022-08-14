@@ -26,6 +26,7 @@ public class MovimentoPlayer : MonoBehaviour
     void Start()
     {
        Rb=GetComponent<Rigidbody>();
+        OffsetCamera = new Vector3(Cam.transform.position.x - transform.position.x, Cam.transform.position.y - transform.position.y, Cam.transform.position.z - transform.position.z);
     }
 
     // Update is called once per frame
