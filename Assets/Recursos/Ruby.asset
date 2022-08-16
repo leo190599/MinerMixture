@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 846bc180ecf070e408b3869681f3adf2, type: 3}
-  m_Name: Diamante
+  m_Name: Ruby
   m_EditorClassIdentifier: 
-  nome: Diamante
-  imagem: {fileID: 21300000, guid: 94a1cd751ae47ed40a2ba84c845d9ad9, type: 3}
+  nome: Ruby
+  imagem: {fileID: 21300000, guid: e5a8a6fadbcfe8843b8cef9c40deb72f, type: 3}
   quantidade: 0
-  valorEmOuro: 10
-  incremento: 1
-  tempoDeIncremento: 6
+  valorEmOuro: 100
+  incremento: 0
+  tempoDeIncremento: 1
   incrementarComOtempo: 1
   gerenciadorDeEDeJogo: {fileID: 11400000, guid: bcd2377e62b278041944ea674160eb54, type: 2}
