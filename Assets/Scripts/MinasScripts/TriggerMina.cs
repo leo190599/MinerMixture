@@ -24,4 +24,9 @@ public class TriggerMina : MonoBehaviour
             EventosSaida.Invoke();
         }
     }
+
+    public void destruir()
+    {
+        Destroy(gameObject);
+    }
 }

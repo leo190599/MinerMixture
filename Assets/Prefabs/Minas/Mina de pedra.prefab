@@ -211,6 +211,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5240137312339823985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5965481871255942362}
+  m_Layer: 0
+  m_Name: LocalDeInstanciaDeRecursoFisico
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5965481871255942362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5240137312339823985}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -4.838, z: 3.06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8802884051056919805}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7344383501377411441
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +388,7 @@ Transform:
   - {fileID: 9052403591556809912}
   - {fileID: 8802884052668704173}
   - {fileID: 8082843708055229508}
+  - {fileID: 5965481871255942362}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -595,14 +627,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 566947543}
+        m_TargetAssemblyTypeName: TriggerMina, Assembly-CSharp
+        m_MethodName: destruir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 228609943845357216}
+        m_TargetAssemblyTypeName: InstanciadorDeMinerios, Assembly-CSharp
+        m_MethodName: criarRecursoColeta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   MaterialDesativado: {fileID: 2100000, guid: 2dfb978adf07a4c41acdc2375d273bb3, type: 2}
   MaterialAtivado: {fileID: 2100000, guid: c3aed4f76bd578d41876172c1b4bcc0c, type: 2}
   custosMinas:
   - recurso: {fileID: 11400000, guid: f06d7a23045af7f40a5df944339fc694, type: 2}
     custo: 100
-  outputMina:
-    recurso: {fileID: 11400000, guid: 80a69ff058371c14aafef2f4f9b59869, type: 2}
-    quantidade: 10
+  renderizador: {fileID: 0}
+--- !u!114 &228609943845357216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8569023763319266818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8366a416e7d4f4b9bae063ee514771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recursoFisico: {fileID: 5743846753709639671, guid: 9fa5c4a6827129d48b02f7d5956e77bb, type: 3}
+  tempoParaInstanciarRecursos: 1
+  localDeInstancia: {fileID: 5965481871255942362}
 --- !u!4 &9052403591556809912 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d2079be9e6875cb4b90e34048e4e76e9, type: 3}

@@ -17,17 +17,7 @@ public class Minas : MonoBehaviour
         public bool checarPossibilidadeDeCompra => recurso.getQuantidade >= custo;
         public float getCusto => custo;
     }
-    [System.Serializable]
-    private class OutputMina
-    {
-        [SerializeField]
-        private Recurso recurso;
-        [SerializeField]
-        private float quantidade;
-
-        public Recurso getRecurso => recurso;
-        public float getQuantidade => quantidade;
-    }
+    
 
     [SerializeField]
     private UnityEvent eventoAtivar;
@@ -37,7 +27,6 @@ public class Minas : MonoBehaviour
     [SerializeField]
     private CustoMina[] custosMinas;
     [SerializeField]
-    private OutputMina outputMina;
     private MeshRenderer renderizador;
     // Start is called before the first frame update
     void Start()
@@ -73,7 +62,6 @@ public class Minas : MonoBehaviour
             {
                 c.getRecurso.comprar(this, c.getCusto);
             }
-            outputMina.getRecurso.incrementarIncremento(this, outputMina.getQuantidade);
             Ativar();
         }
     }
