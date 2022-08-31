@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 846bc180ecf070e408b3869681f3adf2, type: 3}
-  m_Name: Diamante
+  m_Name: Ferro
   m_EditorClassIdentifier: 
-  nome: Diamante
-  imagem: {fileID: 21300000, guid: 94a1cd751ae47ed40a2ba84c845d9ad9, type: 3}
+  nome: Ferro
+  imagem: {fileID: 21300000, guid: c2f96d03ec346a44592ba37b66790c14, type: 3}
   quantidade: 0
   valorEmOuro: 10
-  incremento: 1
+  incremento: 0
   tempoDeIncremento: 6
   incrementarComOtempo: 1
   gerenciadorDeEDeJogo: {fileID: 11400000, guid: bcd2377e62b278041944ea674160eb54, type: 2}

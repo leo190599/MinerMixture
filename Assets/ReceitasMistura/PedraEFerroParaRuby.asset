@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad7f8f28aadf3874399470864120e2d2, type: 3}
-  m_Name: PedraEOuroParaDiamante
+  m_Name: PedraEFerroParaRuby
   m_EditorClassIdentifier: 
   entradas:
-  - recurso: {fileID: 11400000, guid: f06d7a23045af7f40a5df944339fc694, type: 2}
-    quantidade: 40
   - recurso: {fileID: 11400000, guid: 80a69ff058371c14aafef2f4f9b59869, type: 2}
-    quantidade: 40
-  saidas:
-  - recurso: {fileID: 11400000, guid: 491e69473c97f10499829f40e7374906, type: 2}
     quantidade: 10
+  - recurso: {fileID: 11400000, guid: 491e69473c97f10499829f40e7374906, type: 2}
+    quantidade: 5
+  saidas:
+  - recurso: {fileID: 11400000, guid: ea355fea400295e48bfef2212819c5fb, type: 2}
+    quantidade: 1
   tempoDeMistura: 1
