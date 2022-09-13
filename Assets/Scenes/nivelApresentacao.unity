@@ -513,14 +513,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5965481871255942362, guid: d0df9410184734d419cd67bfc6870909, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 5965481871255942362, guid: d0df9410184734d419cd67bfc6870909, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.11
-      objectReference: {fileID: 0}
     - target: {fileID: 8802884051056919804, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_Name
       value: Mina de pedra
