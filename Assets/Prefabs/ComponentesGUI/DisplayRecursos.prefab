@@ -86,6 +86,8 @@ GameObject:
   m_Component:
   - component: {fileID: 838283693077742905}
   - component: {fileID: 830752887170682850}
+  - component: {fileID: 7294698305564852398}
+  - component: {fileID: 7577732358309121203}
   m_Layer: 5
   m_Name: DisplayRecursos
   m_TagString: Untagged
@@ -132,6 +134,39 @@ MonoBehaviour:
   ImagemRecurso: {fileID: 838283693047228200}
   TextoRecurso: {fileID: 838283693706796384}
   textoIncremento: {fileID: 6168200187939299381}
+--- !u!95 &7294698305564852398
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838283693077742904}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8239a2af328291408f90bea0ab365b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7577732358309121203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838283693077742904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f743b9d8509640d41859acb450176f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recursoAServisto: {fileID: 0}
 --- !u!1 &838283693706796389
 GameObject:
   m_ObjectHideFlags: 0
