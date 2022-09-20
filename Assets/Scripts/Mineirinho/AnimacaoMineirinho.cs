@@ -13,7 +13,7 @@ public class AnimacaoMineirinho : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(rb.velocity.magnitude>0)
+        if(rb.velocity.magnitude>0.5f)
         {
             anim.SetBool("Correndo",true);
         }

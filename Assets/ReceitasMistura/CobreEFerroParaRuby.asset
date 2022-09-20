@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad7f8f28aadf3874399470864120e2d2, type: 3}
+  m_Name: CobreEFerroParaRuby
+  m_EditorClassIdentifier: 
+  entradas:
+  - recurso: {fileID: 11400000, guid: 0a6d5089393a5fa48b057c65f0282583, type: 2}
+    quantidade: 10
+  - recurso: {fileID: 11400000, guid: 491e69473c97f10499829f40e7374906, type: 2}
+    quantidade: 5
+  saidas:
+  - recurso: {fileID: 11400000, guid: ea355fea400295e48bfef2212819c5fb, type: 2}
+    quantidade: 1
+  tempoDeMistura: 1
