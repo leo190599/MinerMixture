@@ -10,11 +10,23 @@ PrefabInstance:
     - target: {fileID: 1996859443, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: MaterialAtivado
       value: 
-      objectReference: {fileID: -2813467912831258332, guid: acf97125d6ce4f1488277f3845642506, type: 3}
+      objectReference: {fileID: 2100000, guid: 75a2313461b43d24b8c77e0b93a00a2a, type: 2}
     - target: {fileID: 228609943845357216, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: recursoFisico
       value: 
       objectReference: {fileID: 4589939191797770735, guid: 7dc649f90b6d11d458ecde0ee859d18d, type: 3}
+    - target: {fileID: 5336557267824790301, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 8999911773206952699, guid: 8e603b774908acf4d9426908e57c297a, type: 3}
+    - target: {fileID: 7920624233718824919, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 75a2313461b43d24b8c77e0b93a00a2a, type: 2}
+    - target: {fileID: 8569023763319266818, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_Name
+      value: Cobre
+      objectReference: {fileID: 0}
     - target: {fileID: 8802884051056919804, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_Name
       value: Mina de Cobre
@@ -62,6 +74,50 @@ PrefabInstance:
     - target: {fileID: 8802884051056919805, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3253341
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_Size.y
+      value: 0.37643144
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_Size.z
+      value: 0.25412947
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_Center.x
+      value: 0.016693752
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_Center.y
+      value: 0.025505515
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_Center.z
+      value: 0.11057425
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052403591556809912, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 22.217999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052403591556809912, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 22.217999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052403591556809912, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 22.217999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052403591556809912, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052403591556809912, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0df9410184734d419cd67bfc6870909, type: 3}
