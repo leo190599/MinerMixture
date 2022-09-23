@@ -77,11 +77,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_Size.x
-      value: 0.056796
+      value: 0.014543818
       objectReference: {fileID: 0}
     - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_Size.y
-      value: 0.04447107
+      value: 0.007889572
       objectReference: {fileID: 0}
     - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_Size.z
@@ -89,15 +89,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_Center.x
-      value: -0.012558678
+      value: -0.033684783
       objectReference: {fileID: 0}
     - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_Center.y
-      value: 0.00026778807
+      value: -0.0016780384
       objectReference: {fileID: 0}
     - target: {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_Center.z
-      value: 0.021805948
+      value: 0.02180595
       objectReference: {fileID: 0}
     - target: {fileID: 9052403591556809912, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_LocalScale.x
@@ -149,3 +149,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+--- !u!1 &7817888297057636818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8569023763319266818, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+  m_PrefabInstance: {fileID: 1915716812365582288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &301356237846154924
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817888297057636818}
+  m_Material: {fileID: 13400000, guid: dab7298673b9da643b36e6ce8d231be6, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.024112958
+  m_Height: 0.249911
+  m_Direction: 2
+  m_Center: {x: -0.0058816983, y: -0.0010230199, z: 0.03028104}

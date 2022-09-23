@@ -119,5 +119,25 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8802884051230499662, guid: d0df9410184734d419cd67bfc6870909, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+--- !u!1 &6055360858240310791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8569023763319266818, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+  m_PrefabInstance: {fileID: 2514063197178249221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &2991769176780746922
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6055360858240310791}
+  m_Material: {fileID: 13400000, guid: dab7298673b9da643b36e6ce8d231be6, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.15977131
+  m_Height: 0.40013087
+  m_Direction: 1
+  m_Center: {x: 0.019580608, y: 0.021209342, z: 0.09009779}
