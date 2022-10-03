@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8284506871316740730}
   - component: {fileID: 1176767777685969866}
   - component: {fileID: 6275255015312129225}
+  - component: {fileID: 5817693890608468028}
   - component: {fileID: 4658835501331067282}
   m_Layer: 0
   m_Name: RecursoFIsicoPrefabPedra
@@ -105,6 +106,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5817693890608468028}
+        m_TargetAssemblyTypeName: InstanciadorSom, Assembly-CSharp
+        m_MethodName: instanciarEmissorDeSom
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5491917397108536929, guid: 9fdcdafb7fad95242accaf253eda0c9f, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 6275255015312129225}
         m_TargetAssemblyTypeName: TriggerMina, Assembly-CSharp
         m_MethodName: destruir
@@ -121,6 +134,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   TagAInteragir: Player
+--- !u!114 &5817693890608468028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5743846753709639671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3081ba7404a39d40a03119aa97d4f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &4658835501331067282
 Animator:
   serializedVersion: 4

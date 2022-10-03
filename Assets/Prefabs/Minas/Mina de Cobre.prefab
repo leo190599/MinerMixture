@@ -11,10 +11,30 @@ PrefabInstance:
       propertyPath: MaterialAtivado
       value: 
       objectReference: {fileID: 2100000, guid: 75a2313461b43d24b8c77e0b93a00a2a, type: 2}
+    - target: {fileID: 1996859443, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: custosMinas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996859443, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: custosMinas.Array.data[0].custo
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996859443, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: custosMinas.Array.data[1].custo
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996859443, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: custosMinas.Array.data[1].recurso
+      value: 
+      objectReference: {fileID: 11400000, guid: f06d7a23045af7f40a5df944339fc694, type: 2}
     - target: {fileID: 228609943845357216, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: recursoFisico
       value: 
       objectReference: {fileID: 4589939191797770735, guid: 7dc649f90b6d11d458ecde0ee859d18d, type: 3}
+    - target: {fileID: 1172907437908035962, guid: d0df9410184734d419cd67bfc6870909, type: 3}
+      propertyPath: m_text
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 5336557267824790301, guid: d0df9410184734d419cd67bfc6870909, type: 3}
       propertyPath: m_Mesh
       value: 

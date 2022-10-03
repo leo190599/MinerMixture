@@ -201,8 +201,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: c1cea6cb4305c2343a6e7007d2d33b16, type: 2}
     - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: recursosNecessarios.Array.data[1].recursoAServisto
+      value: 
+      objectReference: {fileID: 11400000, guid: c1cea6cb4305c2343a6e7007d2d33b16, type: 2}
+    - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: recursosNecessarios.Array.data[0].quantidadeNecessaria
-      value: 10
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: recursosNecessarios.Array.data[1].quantidadeNecessaria
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4138256615697587949, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_RootOrder
@@ -251,6 +259,10 @@ PrefabInstance:
     - target: {fileID: 4138256615697587951, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_Name
       value: Porta (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185272563329351498, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: m_text
+      value: x50
       objectReference: {fileID: 0}
     - target: {fileID: 8494035206427366993, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_Sprite
@@ -1051,7 +1063,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 491e69473c97f10499829f40e7374906, type: 2}
     - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: recursosNecessarios.Array.data[0].quantidadeNecessaria
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4138256615697587949, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_RootOrder
@@ -1100,6 +1112,10 @@ PrefabInstance:
     - target: {fileID: 4138256615697587951, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_Name
       value: Porta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185272563329351498, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: m_text
+      value: x30
       objectReference: {fileID: 0}
     - target: {fileID: 8494035206427366993, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_Sprite
@@ -2107,8 +2123,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ea355fea400295e48bfef2212819c5fb, type: 2}
     - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: recursosNecessarios.Array.data[1].recursoAServisto
+      value: 
+      objectReference: {fileID: 11400000, guid: ea355fea400295e48bfef2212819c5fb, type: 2}
+    - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: recursosNecessarios.Array.data[0].quantidadeNecessaria
-      value: 10
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: recursosNecessarios.Array.data[1].quantidadeNecessaria
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4138256615697587949, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_RootOrder
@@ -2157,6 +2181,10 @@ PrefabInstance:
     - target: {fileID: 4138256615697587951, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_Name
       value: Porta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185272563329351498, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: m_text
+      value: x20
       objectReference: {fileID: 0}
     - target: {fileID: 8494035206427366993, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_Sprite
@@ -2689,6 +2717,7 @@ GameObject:
   - component: {fileID: 1401424691}
   - component: {fileID: 1401424692}
   - component: {fileID: 1401424693}
+  - component: {fileID: 1401424694}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -2908,6 +2937,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1401424694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401424687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02d212dea9e31a458cdd587bda45db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tocador: {fileID: 1401424693}
+  musicas:
+  - {fileID: 8300000, guid: 030045ecdf3db0b4a86a44a8bb0ae17e, type: 3}
+  - {fileID: 8300000, guid: dd919d187c6cf0741a007cb893bffec8, type: 3}
+  - {fileID: 8300000, guid: c92214e1d04955349bebdb84e4f82a7a, type: 3}
+  ponteiroMusica: 0
 --- !u!1001 &1410317950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4379,6 +4426,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1795291352}
     m_Modifications:
+    - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: recursosNecessarios.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: recursosNecessarios.Array.data[0].recursoAServisto
+      value: 
+      objectReference: {fileID: 11400000, guid: 80a69ff058371c14aafef2f4f9b59869, type: 2}
+    - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: recursosNecessarios.Array.data[1].recursoAServisto
+      value: 
+      objectReference: {fileID: 11400000, guid: 80a69ff058371c14aafef2f4f9b59869, type: 2}
+    - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: recursosNecessarios.Array.data[0].quantidadeNecessaria
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138256615697587948, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: recursosNecessarios.Array.data[1].quantidadeNecessaria
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4138256615697587949, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4426,6 +4493,10 @@ PrefabInstance:
     - target: {fileID: 4138256615697587951, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
       propertyPath: m_Name
       value: Porta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185272563329351498, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
+      propertyPath: m_text
+      value: x1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b99a3778f58e4484c941c3b8d778c480, type: 3}
