@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class RecursoFisico : MonoBehaviour
 {
@@ -15,10 +16,19 @@ public class RecursoFisico : MonoBehaviour
     [SerializeField]
     private int quantidadeMaxima = 2000;
     private InstanciadorDeMinerios pai;
+    [SerializeField]
+    private TextMeshProUGUI IndicadorDeQuantidade;
+    [SerializeField]
+    private Color corRecursoCheio;
+
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine("corrotinaIncrementoQuantidadeRecursoLocal");
+        if (IndicadorDeQuantidade != null)
+        {
+            IndicadorDeQuantidade.text = quantidadeLocal.ToString();
+        }
     }
 
     public void setPai(InstanciadorDeMinerios novoPai)
@@ -43,6 +53,14 @@ public class RecursoFisico : MonoBehaviour
         if (quantidadeLocal < quantidadeMaxima)
         {
             quantidadeLocal += incremento;
+            if (IndicadorDeQuantidade != null)
+            {
+                IndicadorDeQuantidade.text = quantidadeLocal.ToString();
+                if(quantidadeLocal>=quantidadeMaxima)
+                {
+                    IndicadorDeQuantidade.color = corRecursoCheio;
+                }
+            }
             StartCoroutine("corrotinaIncrementoQuantidadeRecursoLocal");
         }
     }
