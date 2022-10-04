@@ -19,6 +19,8 @@ public class Porta : MonoBehaviour
     private RecursosNecessarios[] recursosNecessarios;
     [SerializeField]
     private UnityEvent eventosAbertura;
+    [SerializeField]
+    private UnityEvent eventosFalhaAbertura;
 
     // Start is called before the first frame update
     public void tentarAbertura()
@@ -29,6 +31,10 @@ public class Porta : MonoBehaviour
             {
                 if(!r.possuiAQuantidadeNecessaria)
                 {
+                    if(eventosFalhaAbertura!=null)
+                    {
+                        eventosFalhaAbertura.Invoke();
+                    }
                     return;
                 }
             }

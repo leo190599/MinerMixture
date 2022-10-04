@@ -21,6 +21,8 @@ public class Minas : MonoBehaviour
 
     [SerializeField]
     private UnityEvent eventoAtivar;
+    [SerializeField]
+    private UnityEvent eventoFalhaAtivar;
     private bool ativo = false;
     [SerializeField]
     private Material MaterialDesativado, MaterialAtivado;
@@ -55,6 +57,10 @@ public class Minas : MonoBehaviour
             {
                 if (!c.checarPossibilidadeDeCompra)
                 {
+                    if(eventoFalhaAtivar!=null)
+                    {
+                        eventoFalhaAtivar.Invoke();
+                    }
                     return;
                 }
             }

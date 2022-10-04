@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8172839037115910223}
   - component: {fileID: 4978375570235402664}
   - component: {fileID: 8185272563329351498}
+  - component: {fileID: 6637324009235473268}
   m_Layer: 5
   m_Name: Quantidade
   m_TagString: Untagged
@@ -135,6 +136,21 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6637324009235473268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740378859394779121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a7ee5ca94e6ca4f9d85a6c2cc7fcf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cores:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1266842130082485473
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +303,19 @@ MonoBehaviour:
         m_CallState: 2
   EventosSaida:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6439237544481572501}
+        m_TargetAssemblyTypeName: TrocaCorImagem, Assembly-CSharp
+        m_MethodName: trocarCor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   TagAInteragir: Player
 --- !u!1 &4138256615697587951
 GameObject:
@@ -373,6 +401,21 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  eventosFalhaAbertura:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6439237544481572501}
+        m_TargetAssemblyTypeName: TrocaCorImagem, Assembly-CSharp
+        m_MethodName: trocarCor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -551,6 +594,7 @@ GameObject:
   - component: {fileID: 7815120762338622951}
   - component: {fileID: 4299759442233771091}
   - component: {fileID: 3949976331468224435}
+  - component: {fileID: 6439237544481572501}
   m_Layer: 5
   m_Name: Fundo
   m_TagString: Untagged
@@ -616,6 +660,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6439237544481572501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5807116479030259679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32fc894d843d23f4b9e7471b26c597e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cores:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  imagem: {fileID: 3949976331468224435}
 --- !u!1 &7350911557404856198
 GameObject:
   m_ObjectHideFlags: 0
