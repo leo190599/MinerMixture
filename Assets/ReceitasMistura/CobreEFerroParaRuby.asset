@@ -20,4 +20,4 @@ MonoBehaviour:
   saidas:
   - recurso: {fileID: 11400000, guid: ea355fea400295e48bfef2212819c5fb, type: 2}
     quantidade: 1
-  tempoDeMistura: 1
+  tempoDeMistura: 0.25

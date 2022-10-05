@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 [CreateAssetMenu(fileName ="NovaReceita",menuName ="receita")]
@@ -23,12 +24,18 @@ public class Receita : ScriptableObject
     private minerioQuantidade[] saidas;
     [SerializeField]
     private float tempoDeMistura;
+    public UnityAction EventosMistura;
+    public UnityAction EventosFalhaMistura;
     public void misturar(Object chamador)
     {
         foreach(minerioQuantidade m in entradas)
         {
             if(!(m.getRecurso.getQuantidade >= m.getQuantidade))
             {
+                if (EventosFalhaMistura!=null)
+                {       
+                    EventosFalhaMistura.Invoke();
+                }
                 return;
             }
         }
@@ -39,6 +46,10 @@ public class Receita : ScriptableObject
         foreach(minerioQuantidade m in saidas)
         {
             m.getRecurso.somarQuantidade(this, m.getQuantidade);
+        }
+        if (EventosMistura != null)
+        {
+            EventosMistura.Invoke();
         }
     }
 

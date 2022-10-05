@@ -25,8 +25,8 @@ public class misturador : MonoBehaviour
 
     IEnumerator corrotinaMistura()
     {
-        yield return new WaitForSeconds(mistura.getTempoDeMistura);
         mistura.misturar(this);
+        yield return new WaitForSeconds(mistura.getTempoDeMistura);
         StartCoroutine("corrotinaMistura");
 
     }

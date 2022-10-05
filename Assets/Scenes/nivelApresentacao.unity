@@ -1442,6 +1442,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1321251595}
     m_Modifications:
+    - target: {fileID: 69653614031094956, guid: 5875d765c5a8a584d83585fcca21cc49, type: 3}
+      propertyPath: receita
+      value: 
+      objectReference: {fileID: 11400000, guid: 2915883868ce2a649a09ff4210119360, type: 2}
     - target: {fileID: 1179551888825328694, guid: 5875d765c5a8a584d83585fcca21cc49, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.11
@@ -1496,6 +1500,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717038368345502848, guid: 5875d765c5a8a584d83585fcca21cc49, type: 3}
       propertyPath: EventosEntrada.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 2915883868ce2a649a09ff4210119360, type: 2}
+    - target: {fileID: 1717038368345502848, guid: 5875d765c5a8a584d83585fcca21cc49, type: 3}
+      propertyPath: EventosEntrada.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 11400000, guid: 2915883868ce2a649a09ff4210119360, type: 2}
     - target: {fileID: 2545086284604351492, guid: 5875d765c5a8a584d83585fcca21cc49, type: 3}
@@ -2291,6 +2299,8 @@ GameObject:
   - component: {fileID: 1237148377}
   - component: {fileID: 1237148379}
   - component: {fileID: 1237148378}
+  - component: {fileID: 1237148381}
+  - component: {fileID: 1237148380}
   m_Layer: 5
   m_Name: Fundo
   m_TagString: Untagged
@@ -2356,6 +2366,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237148376}
   m_CullTransparentMesh: 1
+--- !u!114 &1237148380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237148376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32fc894d843d23f4b9e7471b26c597e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cores:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  imagem: {fileID: 1237148378}
+--- !u!114 &1237148381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237148376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0b642c7238a144d9a08dba9a9de71f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trocador: {fileID: 1237148380}
+  receita: {fileID: 11400000, guid: fc5f52755a2c052498411905622f2a59, type: 2}
+  indexCorSucesso: 0
+  indexCorFalha: 1
+  eventosAuxiliares:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1273001751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6397819911544128760, guid: d8b60e59a04416749896f9a5cb7fd2ec, type: 3}
@@ -2962,6 +3007,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 326534674}
     m_Modifications:
+    - target: {fileID: 69653614031094956, guid: 5875d765c5a8a584d83585fcca21cc49, type: 3}
+      propertyPath: receita
+      value: 
+      objectReference: {fileID: 11400000, guid: 42e4a2a02a0f0ec45a2deed00be4207a, type: 2}
     - target: {fileID: 1717038368305819680, guid: 5875d765c5a8a584d83585fcca21cc49, type: 3}
       propertyPath: m_Name
       value: MIsturador
@@ -3012,6 +3061,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717038368345502848, guid: 5875d765c5a8a584d83585fcca21cc49, type: 3}
       propertyPath: EventosEntrada.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 42e4a2a02a0f0ec45a2deed00be4207a, type: 2}
+    - target: {fileID: 1717038368345502848, guid: 5875d765c5a8a584d83585fcca21cc49, type: 3}
+      propertyPath: EventosEntrada.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 11400000, guid: 42e4a2a02a0f0ec45a2deed00be4207a, type: 2}
     m_RemovedComponents: []
@@ -3619,6 +3672,18 @@ MonoBehaviour:
   EventosEntrada:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1237148381}
+        m_TargetAssemblyTypeName: TrocaCorTriggerMisturador, Assembly-CSharp
+        m_MethodName: inscrever
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 695335595}
         m_TargetAssemblyTypeName: misturador, Assembly-CSharp
         m_MethodName: comecarMistura
@@ -3662,6 +3727,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: AnimacaoMisturador, Assembly-CSharp
         m_MethodName: pararMistura
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1237148381}
+        m_TargetAssemblyTypeName: TrocaCorTriggerMisturador, Assembly-CSharp
+        m_MethodName: desinscrever
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1237148380}
+        m_TargetAssemblyTypeName: TrocaCorImagem, Assembly-CSharp
+        m_MethodName: trocarCor
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
