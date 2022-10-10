@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ferro
   m_EditorClassIdentifier: 
   nome: Ferro
-  imagem: {fileID: 21300000, guid: c2f96d03ec346a44592ba37b66790c14, type: 3}
+  imagem: {fileID: 21300000, guid: 6053cff001ed8bb4f9a6a9b7e25e93a6, type: 3}
   quantidade: 0
   valorEmOuro: 10
   incremento: 0

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Carvao
   m_EditorClassIdentifier: 
   nome: Carvao
-  imagem: {fileID: 21300000, guid: 545c11f22ccd7624a877babff5198c14, type: 3}
-  quantidade: 100
+  imagem: {fileID: 21300000, guid: 529e08de8172d2f4fb41687f2527d504, type: 3}
+  quantidade: 0
   valorEmOuro: 1
   incremento: 0
   tempoDeIncremento: 1

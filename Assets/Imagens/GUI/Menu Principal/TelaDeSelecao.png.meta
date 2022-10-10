@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: c512214c7eb44e0469bfc1c472d98905
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TelaDeSelecao_8
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1038
+        width: 822
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59aae9d21daba3439214267446b9330
+      internalID: 538798722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_11
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 648
+        width: 462
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf1421f809fe3345b64bcf78b40882e
+      internalID: 700607970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_26
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 815
+        width: 360
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848b2190aef4c814f8fdccb1873e5cbe
+      internalID: 2038285353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_27
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 672
+        width: 354
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdf808d2cf9ca74c9c910bebffc4b30
+      internalID: 647560360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_28
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 546
+        width: 822
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbefa90ae01559439f0cdfcf91384b2
+      internalID: 1867350487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_30
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 685
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ef5101b402e1a4eb802bf833b781f0
+      internalID: 1582919173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_35
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 66
+        width: 462
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb99ae375fb53a498abff753ff2b7f3
+      internalID: -1458557561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_38
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 222
+        width: 228
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5877799c246c84b91dc1543d668ab7
+      internalID: -174219594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_39
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 41
+        width: 407
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6323b9ab6d02fc41a098fc02e938d85
+      internalID: -1101547424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_41
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 228
+        width: 228
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346caccfd0265b5469eda305a6845423
+      internalID: -1454650738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 953
+        width: 444
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 3, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b6192a1fa106b4aa27557e30d0e648
+      internalID: -1754310544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TelaDeSelecao_1
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 842
+        width: 523
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca16e85fe556be4e8bc383f36126462
+      internalID: -1983162865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TelaDeSelecao_15: -22071071
+      TelaDeSelecao_2: 1851992907
+      TelaDeSelecao_18: -749445286
+      TelaDeSelecao_13: -327358126
+      TelaDeSelecao_40: 608713219
+      TelaDeSelecao_14: -2083210431
+      TelaDeSelecao_32: -1792353764
+      TelaDeSelecao_38: -174219594
+      TelaDeSelecao_31: -249446759
+      TelaDeSelecao_29: 2037471475
+      TelaDeSelecao_33: -1432579980
+      TelaDeSelecao_39: -1101547424
+      TelaDeSelecao_23: 1559164707
+      TelaDeSelecao_17: 1630226503
+      TelaDeSelecao_26: 2038285353
+      TelaDeSelecao_19: -2098054746
+      TelaDeSelecao_4: 751166905
+      TelaDeSelecao_9: -168497336
+      TelaDeSelecao_16: -970448617
+      TelaDeSelecao_24: -1962255581
+      TelaDeSelecao_11: 700607970
+      TelaDeSelecao_36: -877668981
+      TelaDeSelecao_12: -237412864
+      TelaDeSelecao_27: 647560360
+      TelaDeSelecao_35: -1458557561
+      TelaDeSelecao_34: 535374898
+      TelaDeSelecao_7: 1055744241
+      TelaDeSelecao_0: -1754310544
+      TelaDeSelecao_21: 1719636127
+      TelaDeSelecao_6: 839143145
+      TelaDeSelecao_20: -774770697
+      TelaDeSelecao_25: -1215995884
+      TelaDeSelecao_37: 1931767843
+      TelaDeSelecao_28: 1867350487
+      TelaDeSelecao_1: -1983162865
+      TelaDeSelecao_22: -2067423640
+      TelaDeSelecao_8: 538798722
+      TelaDeSelecao_10: -1796397840
+      TelaDeSelecao_30: 1582919173
+      TelaDeSelecao_42: -694532223
+      TelaDeSelecao_41: -1454650738
+      TelaDeSelecao_3: -209603852
+      TelaDeSelecao_5: 1065623578
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

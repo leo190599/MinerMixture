@@ -23,12 +23,18 @@ public class GerenciadorRecursosTela : MonoBehaviour
     private void OnEnable()
     {
         recursoASerVisto.eventosASeremChamados += atualizarTexto;
-        recursoASerVisto.eventosIncremento += atualizarIncremento;
+        if (textoIncremento != null)
+        {
+            recursoASerVisto.eventosIncremento += atualizarIncremento;
+        }
     }
     private void OnDisable()
     {
         recursoASerVisto.eventosASeremChamados -= atualizarTexto;
-        recursoASerVisto.eventosIncremento -= atualizarIncremento;
+        if (textoIncremento != null)
+        {
+            recursoASerVisto.eventosIncremento -= atualizarIncremento;
+        }
     }
 
     public void atualizarTexto()
