@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ruby
   m_EditorClassIdentifier: 
   nome: Ruby
-  imagem: {fileID: 21300000, guid: e5a8a6fadbcfe8843b8cef9c40deb72f, type: 3}
+  imagem: {fileID: 21300000, guid: 0a0d076d6c38e99459c6a3ab5fcc1725, type: 3}
   quantidade: 0
   valorEmOuro: 100
   incremento: 0

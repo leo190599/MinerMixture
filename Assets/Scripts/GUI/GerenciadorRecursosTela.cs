@@ -17,7 +17,10 @@ public class GerenciadorRecursosTela : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        ImagemRecurso.sprite = recursoASerVisto.getImagem;
+        if (ImagemRecurso != null)
+        {
+            ImagemRecurso.sprite = recursoASerVisto.getImagem;
+        }
     }
 
     private void OnEnable()
