@@ -18,5 +18,5 @@ MonoBehaviour:
   valorEmOuro: 100
   incremento: 0
   tempoDeIncremento: 1
-  incrementarComOtempo: 1
+  incrementarComOtempo: 0
   gerenciadorDeEDeJogo: {fileID: 11400000, guid: bcd2377e62b278041944ea674160eb54, type: 2}
